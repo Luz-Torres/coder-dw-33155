@@ -1,0 +1,235 @@
+/* 
+ROJO OSCURO   rgb(144, 57, 57);
+NEGRO DEL HEADER FOOTER rgb(37, 37 , 37);
+GRIS rgb(50, 50, 52);
+ROSA CLARO rgb(212,146,146);
+*/
+
+/* RESETEO DE DOCUMENTO */
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: roboto slab;
+}
+
+/* GENERALES */
+/* NAV */
+
+.menu {
+    display: flex;
+    border-bottom: 5px solid rgb(144, 57, 57);
+    background-color: rgb(37, 37 , 37);
+}
+
+ul li a {
+    text-decoration: none;
+    color: rgb(211, 204, 204);
+}
+
+.menu ul {
+    display: inline-block;
+    list-style-type: none;
+}
+
+.menu_imagen {
+    display: inline-block;
+}
+
+.menu li {
+    display: inline-block;
+    font-size: 2em;
+    padding: 20px;
+}
+
+/* GENERALES */
+/* BODY */
+body {
+    position: relative;
+}
+
+h1 {
+    color: rgb(211, 204, 204);
+}
+
+.boton {
+    background-color: rgb(144, 57, 57);
+    border: 2px solid rgb(212,146,146);
+    font-size: 2rem;
+    padding: 15px;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 35px;
+    margin: auto;
+}
+
+/* HOME */
+.bg-home {
+    background-image: url(../assets/images/fondo.jpg);      
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.titulo_home h1 {
+    display: inline;
+    font-size: 5em;
+    font-weight: bold;
+    text-decoration: line-through;
+    text-align: left;
+    position: absolute;
+    margin-left: 30px;
+    top: 500px;
+}
+
+/* RECORDATORIO: Al usar vw a veces, genera scroll, es mejor usar %*/
+
+.caja-central {
+    width: 100%;
+    border-bottom: 5px solid rgb(144, 57, 57);
+    background-color: rgb(37, 37 , 37);
+}
+
+.caja-central h1 {
+    text-align: center;
+}
+
+.caja-central li a {
+    text-align: center;
+    margin-top: 15px;
+    padding: 15px;
+}
+
+/* GENERALES */
+/* FOOTER */
+
+footer {
+    border-top: 5px solid rgb(144, 57, 57);
+    background-color: rgb(37, 37 , 37);
+    width: 100%;
+    bottom: 0;
+}
+
+.redes li {
+    display: inline;
+    padding: 10px;
+}
+
+.redes li a img {
+    width: 70px;
+    height: 70px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+/*  DISCOS  */
+.atajos ul {
+    display: flex;
+    font-size:25px;
+    text-align: center;
+    list-style: none;
+    padding: 15px;
+}
+
+.discos {
+    color:rgb(209, 209, 209);
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    padding: 0 1rem;
+} 
+
+.discos__izq {
+    background-color: rgb(50, 50, 52);
+    height: 100vh;
+    width: 50%;
+    text-align: center;
+}
+
+.discos__der img {
+    width: 100vh;
+}
+
+.discos__izq__titulo {
+    font-size: 4rem;
+    font-weight: 500;
+    width: 80%;
+    margin: auto;
+    padding: 30px;
+}
+
+.discos__izq__txt {
+    width: 60%;
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 30px;
+    margin:auto;
+    padding: 10px;
+}
+
+.discos__izq__canciones{
+    font-size: 1rem;
+    line-height: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+.discos__izq__link a {
+    text-decoration: none;
+    color: rgb(209, 209, 209);
+}
+
+.flecha{
+    display: inline;
+    position: fixed;
+}
+
+.flecha img{
+    width: 90px;
+    height: 90px;
+    position: fixed;
+    background-color:rgb(44, 160, 106); /*voy a cambiarlo para que sea acorde al esquema de colores que estoy usando */
+    right: 0;
+    top: 50%;
+}
+
+/* CONTACTO*/
+#contacto {
+    width: 100%;
+    height: 90vh;
+}
+
+form {
+    color: rgb(209, 209, 209);
+    height: 80vh;
+    margin: auto;
+    margin-bottom: auto;
+    border-radius: 30px;
+}
+
+form fieldset {
+    text-decoration: none;
+}
+
+.campos {
+    width: 100%;
+    padding:30px;
+    background-color: rgb(50, 50, 52);
+    text-align: center;
+}
+
+.campos label {
+    font-size: 15px;
+}
+
+/* GALERIA con GRID creo que salio*/
+#galeria{
+    background-color: rgb(50, 50, 52);
+}
