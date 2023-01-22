@@ -1,0 +1,15 @@
+/* DIFERENTES BOTONES POR USAR*/
+.boton {
+    background-color: $secondaryColor;
+    border: 2px solid $specialColor;
+    font-size: 2rem;
+    padding: 15px;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 35px;
+    margin: auto;
+
+    &::selection{
+        background-color: none;
+    }
+}

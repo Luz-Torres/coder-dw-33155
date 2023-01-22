@@ -11,39 +11,35 @@
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
         crossorigin="anonymous">
     <!-- CSS -->
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../styles/style.css">
     <!-- FAVICON -->
     <link rel="shortcut icon" href="./assets/icons/android-chrome-512x512.png">
-    <!-- FONTS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500&display=swap" rel="stylesheet">
     <title>Home</title>
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-secondary border-bottom border-5 border-danger h-25">
+        <nav class="navbar navbar-expand-lg menu">
                 <div class="container-fluid">
                     <a href="../index.html">
-                        <img src="../assets/icons/logoblanco.png" alt="" width="85px" height="85px">
+                        <img src="../assets/icons/logoblanco.png" alt="">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav">
+                        <ul class="navbar-nav align-items-center">
                             <li class="nav-item">
-                                <a class="nav-link active text-white p-3 text-md-center" aria-current="page" href="./discos.html">Discos</a>
+                                <a class="nav-link active p-3 text-md-center" aria-current="page" href="./discos.html">DISCOS</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active text-white p-3 text-md-center" href="./galeria.html">Galería</a>
+                                <a class="nav-link active p-3 text-md-center" href="./galeria.html">GALERIA</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active text-white p-3 text-md-center" href="./no-def.html">No definido</a>
+                                <a class="nav-link active p-3 text-md-center" href="./no-def.html">NO DEFINIDO</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active text-white p-3 text-md-center" href="./contacto.html">Contacto</a>
+                                <a class="nav-link active p-3 text-md-center" href="./contacto.html">CONTACTO</a>
                             </li>
                         </ul>
                     </div>
@@ -69,52 +65,53 @@
     </div>
     
     <!-- para subir otra vez -->
-    <div class="flecha">
+    <!-- <div class="flecha  ">
         <a href="#">
             <img src="../assets/icons/flecha-arriba.png" alt="">
         </a>
-    </div>
-    <main>
-        <section class="discos" id="debut">
-            <div class="discos__izq">
-                <h2 class="discos__izq__titulo">Taylor Swift (2006)</h2>
-                <p class="discos__izq__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa aspernatur illo impedit est sunt maxime harum inventore eligendi magnam totam.</p>
-                <p class="discos__izq__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa aspernatur illo impedit est sunt maxime harum inventore eligendi magnam totam.</p>
-                <div class="discos__izq__canciones">
-                    <h3>Canciones más escuchadas:</h3>
-                    <ol>
-                        <li>1</li>
-                        <li>2</li>
-                        <li>3</li>
-                        <li>4</li>
-                        <li>5</li>
-                    </ol>
-                </div>
-                <div class="discos__izq__link boton">
-                    <a href="https://open.spotify.com/album/5eyZZoQEFQWRHkV2xgAeBw" target="_blank">Ir al album en Spotify</a>
-                </div>
-            </div>
-            <div class="discos__der">
-                <img src="../assets/images/debut.jpg" alt="">
-            </div>
-        </section>
+    </div> -->
 
+    <main class="conteiner-fluid">
+        <div class="conteiner">
+        <section class="discos row" id="debut">
+                <div class="discos__izq col-6">
+                    <h2 class="discos__izq--titulo">Taylor Swift (2006)</h2>
+                    <p class="discos__izq--txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa aspernatur illo impedit est sunt maxime harum inventore eligendi magnam totam.</p>
+                    <p class="discos__izq--txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa aspernatur illo impedit est sunt maxime harum inventore eligendi magnam totam.</p>
+                    <div class="discos__izq--canciones">
+                        <h3>Canciones más escuchadas:</h3>
+                        <ul>
+                            <li>1</li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li>4</li>
+                            <li>5</li>
+                        </ul>
+        
+                    <div class="discos__izq--link boton">
+                        <a href="https://open.spotify.com/album/5eyZZoQEFQWRHkV2xgAeBw" target="_blank">Ir al album en Spotify</a>
+                    </div>
+                </div>
+                <div class="discos__der col-6">
+                    <img src="../assets/images/debut.jpg" alt="">
+                </div>
+        </section>
         <section class="discos" id="fearless">
             <div class="discos__izq">
-                <h2 class="discos__izq__titulo">Fearless(2008/2021)</h2>
-                <p class="discos__izq__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa aspernatur illo impedit est sunt maxime harum inventore eligendi magnam totam.</p>
-                <p class="discos__izq__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa aspernatur illo impedit est sunt maxime harum inventore eligendi magnam totam.</p>
-                <div class="discos__izq__canciones">
+                <h2 class="discos__izq--titulo">Fearless(2008/2021)</h2>
+                <p class="discos__izq--txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa aspernatur illo impedit est sunt maxime harum inventore eligendi magnam totam.</p>
+                <p class="discos__izq--txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa aspernatur illo impedit est sunt maxime harum inventore eligendi magnam totam.</p>
+                <div class="discos__izq--canciones">
                     <h3>Canciones más escuchadas:</h3>
-                    <ol>
+                    <ul>
                         <li>1</li>
                         <li>2</li>
                         <li>3</li>
                         <li>4</li>
                         <li>5</li>
-                    </ol>
+                    </ul>
                 </div>
-                <div class="discos__izq__link boton">
+                <div class="discos__izq--link boton">
                     <a href="https://open.spotify.com/album/4hDok0OAJd57SGIT8xuWJH" target="_blank">Ir al album en Spotify</a>
                 </div>
             </div>
@@ -125,20 +122,20 @@
 
         <section class="discos" id="speak-now">
             <div class="discos__izq">
-                <h2 class="discos__izq__titulo">Speak Now (2010)</h2>
-                <p class="discos__izq__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa aspernatur illo impedit est sunt maxime harum inventore eligendi magnam totam.</p>
-                <p class="discos__izq__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa aspernatur illo impedit est sunt maxime harum inventore eligendi magnam totam.</p>
-                <div class="discos__izq__canciones">
+                <h2 class="discos__izq--titulo">Speak Now (2010)</h2>
+                <p class="discos__izq--txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa aspernatur illo impedit est sunt maxime harum inventore eligendi magnam totam.</p>
+                <p class="discos__izq--txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa aspernatur illo impedit est sunt maxime harum inventore eligendi magnam totam.</p>
+                <div class="discos__izq--canciones">
                     <h3>Canciones más escuchadas:</h3>
-                    <ol>
+                    <ul>
                         <li>1</li>
                         <li>2</li>
                         <li>3</li>
                         <li>4</li>
                         <li>5</li>
-                    </ol>
+                    </ul>
                 </div>
-                <div class="discos__izq__link boton">
+                <div class="discos__izq--link boton">
                     <a href="https://open.spotify.com/album/6Ar2o9KCqcyYF9J0aQP3au" target="_blank">Ir al album en Spotify</a>
                 </div>
             </div>
@@ -149,20 +146,20 @@
 
         <section class="discos" id="red">
             <div class="discos__izq">
-                <h2 class="discos__izq__titulo">Red (2012-2021)</h2>
-                <p class="discos__izq__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa aspernatur illo impedit est sunt maxime harum inventore eligendi magnam totam.</p>
-                <p class="discos__izq__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa aspernatur illo impedit est sunt maxime harum inventore eligendi magnam totam.</p>
-                <div class="discos__izq__canciones">
+                <h2 class="discos__izq--titulo">Red (2012-2021)</h2>
+                <p class="discos__izq--txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa aspernatur illo impedit est sunt maxime harum inventore eligendi magnam totam.</p>
+                <p class="discos__izq--txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa aspernatur illo impedit est sunt maxime harum inventore eligendi magnam totam.</p>
+                <div class="discos__izq--canciones">
                     <h3>Canciones más escuchadas:</h3>
-                    <ol>
+                    <ul>
                         <li>1</li>
                         <li>2</li>
                         <li>3</li>
                         <li>4</li>
                         <li>5</li>
-                    </ol>
+                    </ul>
                 </div>
-                <div class="discos__izq__link boton">
+                <div class="discos__izq--link boton">
                     <a href="https://open.spotify.com/album/6kZ42qRrzov54LcAk4onW9" target="_blank">Ir al album en Spotify</a>
                 </div>
             </div>
@@ -173,20 +170,20 @@
 
         <section class="discos" id="1989">
             <div class="discos__izq">
-                <h2 class="discos__izq__titulo">1989 (2014)</h2>
-                <p class="discos__izq__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa aspernatur illo impedit est sunt maxime harum inventore eligendi magnam totam.</p>
-                <p class="discos__izq__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa aspernatur illo impedit est sunt maxime harum inventore eligendi magnam totam.</p>
-                <div class="discos__izq__canciones">
+                <h2 class="discos__izq--titulo">1989 (2014)</h2>
+                <p class="discos__izq--txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa aspernatur illo impedit est sunt maxime harum inventore eligendi magnam totam.</p>
+                <p class="discos__izq--txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa aspernatur illo impedit est sunt maxime harum inventore eligendi magnam totam.</p>
+                <div class="discos__izq--canciones">
                     <h3>Canciones más escuchadas:</h3>
-                    <ol>
+                    <ul>
                         <li>1</li>
                         <li>2</li>
                         <li>3</li>
                         <li>4</li>
                         <li>5</li>
-                    </ol>
+                    </ul>
                 </div>
-                <div class="discos__izq__link boton">
+                <div class="discos__izq--link boton">
                     <a href="https://open.spotify.com/album/1yGbNOtRIgdIiGHOEBaZWf" target="_blank">Ir al album en Spotify</a>
                 </div>
             </div>
@@ -197,20 +194,20 @@
 
         <section class="discos" id="reputation">
             <div class="discos__izq">
-                <h2 class="discos__izq__titulo">Reputation (2017)</h2>
-                <p class="discos__izq__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa aspernatur illo impedit est sunt maxime harum inventore eligendi magnam totam.</p>
-                <p class="discos__izq__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa aspernatur illo impedit est sunt maxime harum inventore eligendi magnam totam.</p>
-                <div class="discos__izq__canciones">
+                <h2 class="discos__izq--titulo">Reputation (2017)</h2>
+                <p class="discos__izq--txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa aspernatur illo impedit est sunt maxime harum inventore eligendi magnam totam.</p>
+                <p class="discos__izq--txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa aspernatur illo impedit est sunt maxime harum inventore eligendi magnam totam.</p>
+                <div class="discos__izq--canciones">
                     <h3>Canciones más escuchadas:</h3>
-                    <ol>
+                    <ul>
                         <li>1</li>
                         <li>2</li>
                         <li>3</li>
                         <li>4</li>
                         <li>5</li>
-                    </ol>
+                    </ul>
                 </div>
-                <div class="discos__izq__link boton">
+                <div class="discos__izq--link boton">
                     <a href="https://open.spotify.com/album/6DEjYFkNZh67HP7R9PSZvv" target="_blank">Ir al album en Spotify</a>
                 </div>
             </div>
@@ -221,20 +218,20 @@
 
         <section class="discos" id="lover">
             <div class="discos__izq">
-                <h2 class="discos__izq__titulo">Lover (2019)</h2>
-                <p class="discos__izq__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa aspernatur illo impedit est sunt maxime harum inventore eligendi magnam totam.</p>
-                <p class="discos__izq__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa aspernatur illo impedit est sunt maxime harum inventore eligendi magnam totam.</p>
-                <div class="discos__izq__canciones">
+                <h2 class="discos__izq--titulo">Lover (2019)</h2>
+                <p class="discos__izq--txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa aspernatur illo impedit est sunt maxime harum inventore eligendi magnam totam.</p>
+                <p class="discos__izq--txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa aspernatur illo impedit est sunt maxime harum inventore eligendi magnam totam.</p>
+                <div class="discos__izq--canciones">
                     <h3>Canciones más escuchadas:</h3>
-                    <ol>
+                    <ul>
                         <li>1</li>
                         <li>2</li>
                         <li>3</li>
                         <li>4</li>
                         <li>5</li>
-                    </ol>
+                    </ul>
                 </div>
-                <div class="discos__izq__link boton">
+                <div class="discos__izq--link boton">
                     <a href="https://open.spotify.com/album/1NAmidJlEaVgA3MpcPFYGq" target="_blank">Ir al album en Spotify</a>
                 </div>
             </div>
@@ -245,20 +242,20 @@
 
         <section class="discos" id="folklore">
             <div class="discos__izq">
-                <h2 class="discos__izq__titulo">Folklore (2020)</h2>
-                <p class="discos__izq__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa aspernatur illo impedit est sunt maxime harum inventore eligendi magnam totam.</p>
-                <p class="discos__izq__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa aspernatur illo impedit est sunt maxime harum inventore eligendi magnam totam.</p>
-                <div class="discos__izq__canciones">
+                <h2 class="discos__izq--titulo">Folklore (2020)</h2>
+                <p class="discos__izq--txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa aspernatur illo impedit est sunt maxime harum inventore eligendi magnam totam.</p>
+                <p class="discos__izq--txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa aspernatur illo impedit est sunt maxime harum inventore eligendi magnam totam.</p>
+                <div class="discos__izq--canciones">
                     <h3>Canciones más escuchadas:</h3>
-                    <ol>
+                    <ul>
                         <li>1</li>
                         <li>2</li>
                         <li>3</li>
                         <li>4</li>
                         <li>5</li>
-                    </ol>
+                    </ul>
                 </div>
-                <div class="discos__izq__link boton">
+                <div class="discos__izq--link boton">
                     <a href="https://open.spotify.com/album/1pzvBxYgT6OVwJLtHkrdQK" target="_blank">Ir al album en Spotify</a>
                 </div>
             </div>
@@ -269,20 +266,20 @@
 
         <section class="discos" id="evermore">
             <div class="discos__izq">
-                <h2 class="discos__izq__titulo">Evermore (2020)</h2>
-                <p class="discos__izq__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa aspernatur illo impedit est sunt maxime harum inventore eligendi magnam totam.</p>
-                <p class="discos__izq__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa aspernatur illo impedit est sunt maxime harum inventore eligendi magnam totam.</p>
-                <div class="discos__izq__canciones">
+                <h2 class="discos__izq--titulo">Evermore (2020)</h2>
+                <p class="discos__izq--txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa aspernatur illo impedit est sunt maxime harum inventore eligendi magnam totam.</p>
+                <p class="discos__izq--txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa aspernatur illo impedit est sunt maxime harum inventore eligendi magnam totam.</p>
+                <div class="discos__izq--canciones">
                     <h3>Canciones más escuchadas:</h3>
-                    <ol>
+                    <ul>
                         <li>1</li>
                         <li>2</li>
                         <li>3</li>
                         <li>4</li>
                         <li>5</li>
-                    </ol>
+                    </ul>
                 </div>
-                <div class="discos__izq__link boton">
+                <div class="discos__izq--link boton">
                     <a href="https://open.spotify.com/album/6AORtDjduMM3bupSWzbTSG" target="_blank">Ir al album en Spotify</a>
                 </div>
             </div>
@@ -293,20 +290,20 @@
 
         <section class="discos" id="midnights">
             <div class="discos__izq">
-                <h2 class="discos__izq__titulo">Midnights (2022)</h2>
+                <h2 class="discos__izq--titulo">Midnights (2022)</h2>
+                <p class="discos__izq--txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa aspernatur illo impedit est sunt maxime harum inventore eligendi magnam totam.</p>
                 <p class="discos__izq__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa aspernatur illo impedit est sunt maxime harum inventore eligendi magnam totam.</p>
-                <p class="discos__izq__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa aspernatur illo impedit est sunt maxime harum inventore eligendi magnam totam.</p>
-                <div class="discos__izq__canciones">
+                <div class="discos__izq--canciones">
                     <h3>Canciones más escuchadas:</h3>
-                    <ol>
+                    <ul>
                         <li>1</li>
                         <li>2</li>
                         <li>3</li>
                         <li>4</li>
                         <li>5</li>
-                    </ol>
+                    </ul>
                 </div>
-                <div class="discos__izq__link boton">
+                <div class="discos__izq--link boton">
                     <a href="https://open.spotify.com/album/3lS1y25WAhcqJDATJK70Mq" target="_blank">Ir al album en Spotify</a>
                 </div>
             </div>
@@ -314,41 +311,43 @@
                 <img src="../assets/images/midnights.jpg" alt="">
             </div>
         </section>
+    </div>
     </main>
     
-    <footer class="bg-secondary border-top border-5 border-danger h-25">
+    <footer>
         <section class="conteiner-fluid">
             <ul class="redes row">
-                <li class="">
-                    <a class="d-sm-flex justify-content-sm-center" href="https://www.youtube.com/user/taylorswift" target="_blank">
-                        <img src="../assets/icons/yt-logo.png" alt="">
-                    </a>
-                </li>
-                <li>
-                    <a class="d-sm-flex justify-content-sm-center" href="https://open.spotify.com/artist/06HL4z0CvFAxyc27GXpf02?si=3PfytGHlRi6WOUeBA3WGmw"
-                        target="_blank">
-                        <img src="../assets/icons/spotify-logo.png" alt="">
-                    </a>
-                </li>
-                <li>
-                    <a class="d-sm-flex justify-content-sm-center" href="https://www.instagram.com/taylorswift/?hl=es-la" target="_blank">
-                        <img src="../assets/icons/insta-logo.png" alt="">
-                    </a>
-                </li>
-                <li>
-                    <a class="d-sm-flex justify-content-sm-center" href="https://twitter.com/taylorswift13" target="_blank">
-                        <img src="../assets/icons/twt-logo.png" alt="">
-                    </a>
-                </li>
-                <li>
-                    <a class="d-sm-flex justify-content-sm-center"href="https://www.tiktok.com/@taylorswift" target="_blank">
-                        <img src="../assets/icons/tiktok-logo.png" alt="">
-                    </a>
-                </li>
+                <div class="col">
+                    <li>
+                        <a class=" d-xl-inline d-sm-flex justify-content-sm-center" href="https://www.youtube.com/user/taylorswift" target="_blank">
+                            <img src="../assets/icons/yt-logo.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="d-xl-inline d-sm-flex justify-content-sm-center" href="https://open.spotify.com/artist/06HL4z0CvFAxyc27GXpf02?si=3PfytGHlRi6WOUeBA3WGmw"
+                            target="_blank">
+                            <img src="../assets/icons/spotify-logo.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="d-xl-inline d-sm-flex justify-content-sm-center" href="https://www.instagram.com/taylorswift/?hl=es-la" target="_blank">
+                            <img src="../assets/icons/insta-logo.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="d-xl-inline d-sm-flex justify-content-sm-center" href="https://twitter.com/taylorswift13" target="_blank">
+                            <img src="../assets/icons/twt-logo.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="d-xl-inline d-sm-flex justify-content-sm-center"href="https://www.tiktok.com/@taylorswift" target="_blank">
+                            <img src="../assets/icons/tiktok-logo.png" alt="">
+                        </a>
+                    </li>
+            </div>
             </ul>
         </section>
     </footer>
-
 
     <!-- SCRIPT BOOTSTRAP -->
     <script 

@@ -1,0 +1,35 @@
+
+/*  HEADER  */
+header{ 
+    .menu {
+        display: flex;
+        border-bottom: 5px solid $secondaryColor;
+
+        div{
+            a{
+                img{
+                    width:85px;
+                    height:85px;
+                }
+            }
+            button{
+                color: $secondaryColor; 
+            }
+
+            div{
+                ul{
+                    li{
+                        a{
+                            font-size: 2rem;
+                            text-decoration: none;
+                            color: $textColor !important;
+                            &:hover{
+                                color:$secondaryColor;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

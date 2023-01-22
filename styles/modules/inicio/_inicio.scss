@@ -1,0 +1,29 @@
+/*  HOME  */
+
+main{
+    .home__bg{
+        background-image: url(../assets/images/fondo.jpg);      
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        width: 100%;
+    }
+
+    .home_titulo{
+        h1{
+            s{
+                display: inline;
+                font-size: 5em;
+                font-weight: bold;
+                text-decoration: line-through;
+                text-align: left;
+                position: absolute;
+                margin-left: 30px;
+                top: 500px;
+                color: $textColor;
+                
+            }
+        }
+    }
+}

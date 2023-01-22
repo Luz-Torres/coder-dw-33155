@@ -1,0 +1,25 @@
+@import "./variables";
+/*  FOOTER  */
+footer{
+    border-top: 5px solid $secondaryColor;
+
+    section{
+        .redes{
+            div{
+                li{
+                    display: inline;
+                    padding: 10px;
+                    a{
+                        img{
+                            width: 70px;
+                            height: 70px;
+                            margin-top: 25px;
+                            margin-bottom: 25px;
+                            gap: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
